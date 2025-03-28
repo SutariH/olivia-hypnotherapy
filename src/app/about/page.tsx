@@ -1,47 +1,48 @@
+import Link from 'next/link'
+import GlobalCTA from '@/components/GlobalCTA'
+
 export default function About() {
   return (
-    <main className="min-h-screen bg-gradient-to-b from-[#5390d9] to-[#F6FFF8]">
-      <div className="max-w-6xl mx-auto px-4 py-16">
-        <div className="text-center mb-16">
-          <h1 className="text-4xl md:text-6xl font-bold text-[#F6FFF8] mb-6">
-            About Olivia Hypnotherapy
+    <main className="min-h-screen bg-gradient-to-b from-[#BADED7] to-[#E8F7F1]">
+      <section className="py-20 px-4">
+        <div className="max-w-4xl mx-auto">
+          <h1 className="text-4xl md:text-5xl font-bold text-[#2A4D48] text-center mb-12">
+            About Our Approach
           </h1>
-          <p className="text-xl md:text-2xl text-[#F6FFF8] mb-8">
-            Dedicated to helping you achieve lasting transformation
-          </p>
-        </div>
-
-        <div className="grid md:grid-cols-2 gap-12 items-center">
-          <div className="bg-white p-8 rounded-lg shadow-lg">
-            <h2 className="text-3xl font-bold text-[#5390d9] mb-6">My Journey</h2>
-            <p className="text-gray-700 mb-4">
-              With years of experience in hypnotherapy, I specialize in helping clients achieve their weight loss goals and transform their lives. My approach combines proven hypnotherapy techniques with personalized support to create lasting change.
+          <div className="bg-[#D2F2E7] p-8 rounded-lg shadow-lg mb-8">
+            <h2 className="text-2xl font-semibold text-[#2A4D48] mb-4">
+              The Power of Hypnotherapy for Weight Loss
+            </h2>
+            <p className="text-[#2A4D48] mb-6">
+              Traditional diets focus on restricting what you eat, but they don&apos;t address the underlying reasons why you overeat. That&apos;s why 95% of diets fail in the long term.
             </p>
-            <p className="text-gray-700 mb-4">
-              I understand the challenges of weight loss and emotional eating, and I&apos;m here to guide you through your transformation journey with compassion and expertise.
+            <p className="text-[#2A4D48] mb-6">
+              Hypnotherapy takes a different approach. By working directly with your subconscious mind, we can identify and resolve the root causes of your weight issues - whether that&apos;s emotional eating, stress, past trauma, or limiting beliefs.
             </p>
           </div>
 
-          <div className="bg-white p-8 rounded-lg shadow-lg">
-            <h2 className="text-3xl font-bold text-[#5390d9] mb-6">My Approach</h2>
-            <p className="text-gray-700 mb-4">
-              I believe in creating a safe and supportive environment where you can explore and overcome the root causes of your weight-related challenges. Through hypnotherapy, we&apos;ll work together to reprogram limiting beliefs and establish healthy habits.
+          <div className="bg-[#D2F2E7] p-8 rounded-lg shadow-lg">
+            <h2 className="text-2xl font-semibold text-[#2A4D48] mb-4">
+              What to Expect
+            </h2>
+            <p className="text-[#2A4D48] mb-6">
+              During our sessions, you&apos;ll experience a deeply relaxing state where your mind becomes more open to positive suggestions. This state allows us to:
             </p>
-            <p className="text-gray-700 mb-4">
-              My methods are evidence-based and tailored to your unique needs, ensuring you receive the most effective support for your personal transformation.
+            <ul className="list-disc list-inside text-[#2A4D48] mb-6 space-y-2">
+              <li>Reprogram negative eating patterns</li>
+              <li>Build new, healthy habits</li>
+              <li>Increase motivation for exercise</li>
+              <li>Improve self-image and confidence</li>
+              <li>Reduce stress and emotional eating</li>
+            </ul>
+            <p className="text-[#2A4D48]">
+              The result? Natural, sustainable weight loss without the struggle of dieting.
             </p>
           </div>
         </div>
+      </section>
 
-        <div className="text-center mt-16">
-          <a
-            href="/contact"
-            className="inline-block bg-[#5390d9] text-[#F6FFF8] px-8 py-4 rounded-lg text-lg font-semibold hover:bg-[#4380c9] transition-colors"
-          >
-            Start Your Journey Today
-          </a>
-        </div>
-      </div>
+      <GlobalCTA />
     </main>
   )
 } 

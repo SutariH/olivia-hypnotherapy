@@ -36,7 +36,7 @@ export default function ContactForm() {
   return (
     <form onSubmit={handleSubmit} className="space-y-6">
       <div>
-        <label htmlFor="name" className="block text-sm font-medium text-gray-700">
+        <label htmlFor="name" className="block text-[#2A4D48] font-medium mb-2">
           Name
         </label>
         <input
@@ -46,12 +46,12 @@ export default function ContactForm() {
           required
           value={formData.name}
           onChange={handleChange}
-          className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-pink-500 focus:ring-pink-500"
+          className="w-full px-4 py-2 rounded-lg border border-[#BADED7] focus:outline-none focus:ring-2 focus:ring-[#2A4D48]"
         />
       </div>
 
       <div>
-        <label htmlFor="email" className="block text-sm font-medium text-gray-700">
+        <label htmlFor="email" className="block text-[#2A4D48] font-medium mb-2">
           Email
         </label>
         <input
@@ -61,12 +61,12 @@ export default function ContactForm() {
           required
           value={formData.email}
           onChange={handleChange}
-          className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-pink-500 focus:ring-pink-500"
+          className="w-full px-4 py-2 rounded-lg border border-[#BADED7] focus:outline-none focus:ring-2 focus:ring-[#2A4D48]"
         />
       </div>
 
       <div>
-        <label htmlFor="phone" className="block text-sm font-medium text-gray-700">
+        <label htmlFor="phone" className="block text-[#2A4D48] font-medium mb-2">
           Phone
         </label>
         <input
@@ -75,12 +75,12 @@ export default function ContactForm() {
           id="phone"
           value={formData.phone}
           onChange={handleChange}
-          className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-pink-500 focus:ring-pink-500"
+          className="w-full px-4 py-2 rounded-lg border border-[#BADED7] focus:outline-none focus:ring-2 focus:ring-[#2A4D48]"
         />
       </div>
 
       <div>
-        <label htmlFor="service" className="block text-sm font-medium text-gray-700">
+        <label htmlFor="service" className="block text-[#2A4D48] font-medium mb-2">
           Service Interest
         </label>
         <select
@@ -88,7 +88,7 @@ export default function ContactForm() {
           id="service"
           value={formData.service}
           onChange={handleChange}
-          className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-pink-500 focus:ring-pink-500"
+          className="w-full px-4 py-2 rounded-lg border border-[#BADED7] focus:outline-none focus:ring-2 focus:ring-[#2A4D48]"
         >
           <option value="weight-loss">Weight Loss Hypnotherapy</option>
           <option value="emotional-eating">Emotional Eating Therapy</option>
@@ -98,7 +98,7 @@ export default function ContactForm() {
       </div>
 
       <div>
-        <label htmlFor="message" className="block text-sm font-medium text-gray-700">
+        <label htmlFor="message" className="block text-[#2A4D48] font-medium mb-2">
           Message
         </label>
         <textarea
@@ -108,14 +108,14 @@ export default function ContactForm() {
           required
           value={formData.message}
           onChange={handleChange}
-          className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-pink-500 focus:ring-pink-500"
-        />
+          className="w-full px-4 py-2 rounded-lg border border-[#BADED7] focus:outline-none focus:ring-2 focus:ring-[#2A4D48]"
+        ></textarea>
       </div>
 
       <div>
         <button
           type="submit"
-          className="w-full bg-pink-600 text-white px-6 py-3 rounded-full hover:bg-pink-700 transition-colors"
+          className="w-full bg-[#2A4D48] text-[#E8F7F1] px-6 py-3 rounded-lg font-semibold hover:bg-[#1A3D38] transition-colors"
         >
           Send Message
         </button>

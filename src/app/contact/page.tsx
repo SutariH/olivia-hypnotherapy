@@ -1,47 +1,32 @@
 import ContactForm from '@/components/ContactForm'
+import Link from 'next/link'
+import GlobalCTA from '@/components/GlobalCTA'
 
 export default function Contact() {
   return (
-    <main className="min-h-screen bg-gradient-to-b from-[#F6FFF8] to-[#CCE3DE] pt-20">
+    <main className="min-h-screen bg-gradient-to-b from-[#BADED7] to-[#E8F7F1] pt-20">
       {/* Hero Section */}
-      <section className="py-20 px-4 bg-[#F6FFF8]">
+      <section className="py-20 px-4 bg-[#D2F2E7]">
         <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-4xl md:text-5xl font-bold text-[#6B9080] mb-6">
+          <h1 className="text-4xl md:text-5xl font-bold text-[#2A4D48] mb-6">
             Get in Touch
           </h1>
-          <p className="text-xl text-[#6B9080]/80">
-            Book your free consultation or ask any questions about our services
+          <p className="text-xl text-[#2A4D48] mb-8">
+            Take the first step towards your transformation today
           </p>
         </div>
       </section>
 
-      {/* Contact Content */}
+      {/* Contact Form Section */}
       <section className="py-20 px-4">
-        <div className="max-w-6xl mx-auto">
-          <div className="grid md:grid-cols-2 gap-12">
-            {/* Contact Information */}
-            <div>
-              <h2 className="text-3xl font-bold text-[#6B9080] mb-8">Contact Information</h2>
-              <div className="space-y-6">
-                <div>
-                  <h3 className="text-xl font-semibold text-[#6B9080] mb-2">Phone</h3>
-                  <p className="text-[#6B9080]/80">+358 44 985 3101</p>
-                </div>
-                <div>
-                  <h3 className="text-xl font-semibold text-[#6B9080] mb-2">Email</h3>
-                  <p className="text-[#6B9080]/80">olivia.io@hotmail.com</p>
-                </div>
-              </div>
-            </div>
-
-            {/* Contact Form */}
-            <div className="bg-[#F6FFF8] p-8 rounded-lg shadow-lg">
-              <h2 className="text-3xl font-bold text-[#6B9080] mb-8">Send a Message</h2>
-              <ContactForm />
-            </div>
+        <div className="max-w-2xl mx-auto">
+          <div className="bg-[#D2F2E7] p-8 rounded-lg shadow-lg">
+            <ContactForm />
           </div>
         </div>
       </section>
+
+      <GlobalCTA />
     </main>
   )
 } 
