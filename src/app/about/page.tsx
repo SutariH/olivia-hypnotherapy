@@ -1,4 +1,3 @@
-import Link from 'next/link'
 import GlobalCTA from '@/components/GlobalCTA'
 
 export default function About() {
