@@ -10,16 +10,16 @@ export default function Navigation() {
           </Link>
           <div className="flex space-x-8">
             <Link href="/about" className="text-[#2A4D48] hover:text-[#1A3D38]">
-              Tietoa
+              About
             </Link>
             <Link href="/services" className="text-[#2A4D48] hover:text-[#1A3D38]">
-              Palvelut
+              Services
             </Link>
             <Link href="/blog" className="text-[#2A4D48] hover:text-[#1A3D38]">
-              Blogi
+              Blog
             </Link>
             <Link href="/contact" className="text-[#2A4D48] hover:text-[#1A3D38]">
-              Yhteystiedot
+              Contact
             </Link>
           </div>
         </div>

@@ -1,44 +1,44 @@
 import Link from 'next/link'
 import GlobalCTA from '@/components/GlobalCTA'
 
-// Tämä on esimerkki blogikirjoituksesta. Oikeassa toteutuksessa data tulisi tietokannasta tai CMS:stä.
+// This is an example blog post. In a real implementation, data would come from a database or CMS.
 const blogPost = {
   id: 1,
-  title: "Miksi laihdutuskuurit eivät toimi pitkällä aikavälillä?",
+  title: "Why Diets Don't Work Long-Term",
   content: `
-    Perinteiset laihdutuskuurit ovat yksi yleisimmistä tavoista yrittää pudottaa painoa, mutta tutkimukset osoittavat, että 95% niistä epäonnistuu pitkällä aikavälillä. Miksi näin on?
+    Traditional diets are one of the most common ways people try to lose weight, but studies show that 95% of them fail in the long term. Why is this?
 
-    Laihdutuskuurien ongelmat:
+    Problems with Diets:
 
-    1. Ne keskittyvät vain oireisiin, eivät juurisyihin
-    - Useimmat laihdutuskuurit keskittyvät vain ruokavalion rajoittamiseen
-    - Ne eivät käsittele syömiskäyttäytymisen taustalla olevia psykologisia tekijöitä
-    - Tunnesyöminen ja stressinsäätely jäävät huomiotta
+    1. They Focus on Symptoms, Not Root Causes
+    - Most diets only focus on restricting food intake
+    - They don't address the psychological factors behind eating behaviors
+    - Emotional eating and stress management are ignored
 
-    2. Rajoittava ajattelutapa
-    - Tiukat säännöt ja kiellot laukaisevat usein vastareaktion
-    - "Kielletty hedelmä" -efekti voi johtaa ahmimiseen
-    - Syyllisyyden ja häpeän tunteet vaikeuttavat tervettä suhdetta ruokaan
+    2. Restrictive Mindset
+    - Strict rules and prohibitions often trigger a backlash
+    - The "forbidden fruit" effect can lead to binge eating
+    - Feelings of guilt and shame make it difficult to maintain a healthy relationship with food
 
-    3. Kestämättömät muutokset
-    - Äärimmäiset ruokavaliomuutokset ovat vaikeita ylläpitää
-    - Kehon aineenvaihdunta hidastuu rajun laihduttamisen seurauksena
-    - Paluu "normaaliin" johtaa usein painon takaisin nousuun
+    3. Unsustainable Changes
+    - Extreme dietary changes are difficult to maintain
+    - Body metabolism slows down as a result of drastic dieting
+    - Return to "normal" often leads to weight regain
 
-    Hypnoterapian tarjoama ratkaisu:
+    The Hypnotherapy Solution:
 
-    Hypnoterapia lähestyy painonhallintaa kokonaisvaltaisesti:
-    - Työskennellään alitajunnan kanssa muuttaen syvälle juurtuneita uskomuksia
-    - Käsitellään tunnesyömisen taustalla olevia tekijöitä
-    - Luodaan positiivinen suhde ruokaan ja omaan kehoon
-    - Rakennetaan kestäviä, terveellisiä tapoja ilman pakkoa ja rajoituksia
+    Hypnotherapy approaches weight management holistically:
+    - Working with the subconscious to change deeply rooted beliefs
+    - Addressing factors behind emotional eating
+    - Creating a positive relationship with food and your body
+    - Building sustainable, healthy habits without force or restrictions
 
-    Lopputulos:
-    Kun työskennellään mielen kanssa, painonhallinnasta tulee luonnollinen osa elämää, ei jatkuvaa taistelua.
+    The Result:
+    When working with the mind, weight management becomes a natural part of life, not a constant struggle.
   `,
   date: "2024-03-15",
   readTime: "5 min",
-  category: "Painonhallinta",
+  category: "Weight Management",
   author: "Olivia"
 }
 
@@ -50,7 +50,7 @@ export default function BlogPost({ params }: { params: { id: string } }) {
           href="/blog"
           className="inline-block mb-8 text-[#2A4D48] hover:underline"
         >
-          ← Takaisin blogiin
+          ← Back to Blog
         </Link>
 
         <div className="bg-[#D2F2E7] p-8 rounded-lg shadow-lg">
@@ -64,13 +64,13 @@ export default function BlogPost({ params }: { params: { id: string } }) {
             <div className="flex items-center text-[#2A4D48] text-sm mb-8">
               <span>{blogPost.author}</span>
               <span className="mx-2">•</span>
-              <span>{new Date(blogPost.date).toLocaleDateString('fi-FI', {
+              <span>{new Date(blogPost.date).toLocaleDateString('en-US', {
                 year: 'numeric',
                 month: 'long',
                 day: 'numeric'
               })}</span>
               <span className="mx-2">•</span>
-              <span>{blogPost.readTime} lukuaika</span>
+              <span>{blogPost.readTime} read</span>
             </div>
           </div>
 

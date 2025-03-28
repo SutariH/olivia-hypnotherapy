@@ -4,35 +4,35 @@ import GlobalCTA from '@/components/GlobalCTA'
 const blogPosts = [
   {
     id: 1,
-    title: "Miksi laihdutuskuurit eivät toimi pitkällä aikavälillä?",
-    excerpt: "Tutkimme syitä siihen, miksi perinteiset laihdutuskuurit epäonnistuvat ja miten hypnoterapia tarjoaa kestävämmän ratkaisun painonhallintaan.",
+    title: "Why Diets Don't Work Long-Term",
+    excerpt: "Explore why traditional diets fail and how hypnotherapy offers a more sustainable approach to weight management.",
     date: "2024-03-15",
     readTime: "5 min",
-    category: "Painonhallinta"
+    category: "Weight Management"
   },
   {
     id: 2,
-    title: "Tunnesyöminen ja sen voittaminen hypnoterapian avulla",
-    excerpt: "Miten tunnistaa tunnesyömisen merkit ja kuinka hypnoterapia voi auttaa käsittelemään tunteita terveellisemmällä tavalla.",
+    title: "Overcoming Emotional Eating Through Hypnotherapy",
+    excerpt: "Learn how to identify signs of emotional eating and how hypnotherapy can help you develop healthier ways to process emotions.",
     date: "2024-03-10",
     readTime: "7 min",
-    category: "Tunnesyöminen"
+    category: "Emotional Eating"
   },
   {
     id: 3,
-    title: "Alitajunnan voima painonpudotuksessa",
-    excerpt: "Tutki kanssamme, miten alitajunta vaikuttaa syömistottumuksiimme ja miten voimme valjastaa sen painonhallinnan tueksi.",
+    title: "The Power of the Subconscious in Weight Loss",
+    excerpt: "Discover how your subconscious mind influences your eating habits and how we can harness it for successful weight management.",
     date: "2024-03-05",
     readTime: "6 min",
-    category: "Hypnoterapia"
+    category: "Hypnotherapy"
   },
   {
     id: 4,
-    title: "Stressinhallinta ja painonpudotus",
-    excerpt: "Stressi voi olla merkittävä este painonpudotukselle. Lue, miten hypnoterapia auttaa stressinhallinnassa ja tukee painonhallintaa.",
+    title: "Stress Management and Weight Loss",
+    excerpt: "Understand how stress can be a major barrier to weight loss and how hypnotherapy helps in managing stress effectively.",
     date: "2024-02-28",
     readTime: "4 min",
-    category: "Stressi"
+    category: "Stress Management"
   }
 ]
 
@@ -43,10 +43,10 @@ export default function Blog() {
       <section className="py-20 px-4 bg-[#D2F2E7]">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-4xl md:text-5xl font-bold text-[#2A4D48] mb-6">
-            Blogi
+            Blog
           </h1>
           <p className="text-xl text-[#2A4D48] mb-8">
-            Hyödyllisiä artikkeleita painonhallinnasta ja hypnoterapiasta
+            Helpful articles about weight management and hypnotherapy
           </p>
         </div>
       </section>
@@ -65,7 +65,7 @@ export default function Blog() {
                     {post.category}
                   </span>
                   <div className="text-[#2A4D48] text-sm">
-                    {post.readTime}
+                    {post.readTime} read
                   </div>
                 </div>
                 <h2 className="text-2xl font-semibold text-[#2A4D48] mb-4">
@@ -76,7 +76,7 @@ export default function Blog() {
                 </p>
                 <div className="flex justify-between items-center">
                   <span className="text-[#2A4D48] text-sm">
-                    {new Date(post.date).toLocaleDateString('fi-FI', {
+                    {new Date(post.date).toLocaleDateString('en-US', {
                       year: 'numeric',
                       month: 'long',
                       day: 'numeric'
@@ -86,7 +86,7 @@ export default function Blog() {
                     href={`/blog/${post.id}`}
                     className="text-[#2A4D48] font-semibold hover:underline"
                   >
-                    Lue lisää →
+                    Read more →
                   </Link>
                 </div>
               </article>
