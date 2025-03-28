@@ -2,33 +2,26 @@ import Link from 'next/link'
 
 export default function Navigation() {
   return (
-    <nav className="fixed w-full z-50 bg-[#F6FFF8]/80 backdrop-blur-md shadow-sm">
+    <nav className="fixed w-full bg-[#BADED7] shadow-lg z-50">
       <div className="max-w-6xl mx-auto px-4">
-        <div className="flex items-center justify-between h-20">
-          <Link href="/" className="text-2xl font-bold text-[#5390d9]">
-            Olivia Hypnotherapy
+        <div className="flex justify-between items-center h-16">
+          <Link href="/" className="text-[#2A4D48] text-xl font-bold">
+            Olivia
           </Link>
-          
-          <div className="hidden md:flex space-x-8">
-            <Link href="/" className="text-[#6B9080]/80 hover:text-[#5390d9] transition-colors">
-              Home
+          <div className="flex space-x-8">
+            <Link href="/about" className="text-[#2A4D48] hover:text-[#1A3D38]">
+              Tietoa
             </Link>
-            <Link href="/about" className="text-[#6B9080]/80 hover:text-[#5390d9] transition-colors">
-              About
+            <Link href="/services" className="text-[#2A4D48] hover:text-[#1A3D38]">
+              Palvelut
             </Link>
-            <Link href="/services" className="text-[#6B9080]/80 hover:text-[#5390d9] transition-colors">
-              Services
+            <Link href="/blog" className="text-[#2A4D48] hover:text-[#1A3D38]">
+              Blogi
             </Link>
-            <Link href="/contact" className="text-[#6B9080]/80 hover:text-[#5390d9] transition-colors">
-              Contact
+            <Link href="/contact" className="text-[#2A4D48] hover:text-[#1A3D38]">
+              Yhteystiedot
             </Link>
           </div>
-
-          <button className="md:hidden">
-            <svg className="w-6 h-6 text-[#5390d9]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-            </svg>
-          </button>
         </div>
       </div>
     </nav>
